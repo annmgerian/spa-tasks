@@ -2,14 +2,14 @@ require('dotenv').config();
 const express = require('express');
 const http = require('http');
 const next = require('next');
-const PORT = '3001';
+const PORT = '80';
 const dev = process.env.NODE_ENV !== 'production';
 let bodyParser = require('body-parser');
 
 var fs = require('fs');
 const app = next({
     dev,
-    dir: 'C:\\Users\\Ann\\WebstormProjects\\spa-tasks',
+    dir: __dirname,
 });
 const handle = app.getRequestHandler();
 
