@@ -74,7 +74,7 @@ class EditShell extends Component {
             );
             if(this.state.task!=='') {
                 // var id = this.props.id
-                var request = new Request(`http://localhost:3001/api/addId`, {
+                var request = new Request(`/api/addId`, {
                     method: 'POST',
                     headers: new Headers({ 'Content-Type': 'application/json' }),
                     body: JSON.stringify({id:this.props.id}),

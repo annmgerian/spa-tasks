@@ -11,7 +11,7 @@ class Task extends Component {
     }
 
     componentDidMount = async () => {
-        var request = new Request(`http://localhost:3001/api/getId`, {
+        var request = new Request(`/api/getId`, {
             method: 'POST',
             headers: new Headers({'Content-Type': 'application/json'}),
             body: JSON.stringify({id: this.props.id}),
