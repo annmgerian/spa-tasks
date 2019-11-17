@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const http = require('http');
 const next = require('next');
-const PORT = '80';
+const PORT = process.env.PORT || 3000;
 const dev = 'production' !== 'production';
 let bodyParser = require('body-parser');
 
